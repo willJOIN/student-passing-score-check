@@ -33,8 +33,11 @@ public class ExercicioMediaAluno {
                 System.out.println("Erro ao pegar nota1 ou nota2:\n" + ex);
             }
 
-            if (nota1 > 10.0f || nota2 > 10.0f) {
-                System.out.println("Notas nao podem ser maior que 10!");
+            if (nota1 < 0.0f 
+                || nota1 > 10.0f 
+                || nota2 < 0.0f
+                || nota2 > 10.0f) {
+                System.out.println("Notas nao podem ser menores que 0 ou maiores que 10!");
             }
         } while (nota1 > 10.0f || nota2 > 10.0f);
 
